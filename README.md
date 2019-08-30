@@ -160,3 +160,27 @@ Pin|Symbol       |Special Function|Notes          |U1 Pin|GPIO |U0  |U2  |U3  |E
 18 |P6_1         |                |               |74    |3[0] |UCLK|    |    |DYCS1# |RX_WS |        |       |T2_CAP0|       
 19 |GND          |                |               |      |     |    |    |    |       |      |        |       |       |       
 20 |VCC          |                |3.3 V          |      |     |    |    |    |       |      |        |       |       |       
+
+
+## Clear Acrylic Case
+
+The vector graphic file provided [here](https://github.com/greatfet-hardware/azalea/azalea_acrylic_case.svg) was created with Inkscape.
+
+The black lines are the edge cuts. The blue lines are cut outs. The red lines arfe optional and should be lightly etched if they are used.
+The red lines are meant to be used to help count holes in the headers.
+
+### The BOM 
+
+* 4 x 4.5 mm OD Hex Standoffs (Female-Female) / M3-0.5 x 6 mm / Aluminum
+* 4 x 4.5 mm OD Hex Standoffs (Female-Female) / M3-0.5 x 5 mm / Aluminum
+* 4 x M3-0.5 x 12 mm / Phillips Pan Head Machine Screw
+* 4 x M3-0.5 x 5 mm / Phillips Pan Head Machine Screw
+
+Optional:
+* 4 (per neighbor) x 4.5 mm OD Hex Standoffs (Male-Female) / M3-0.5 x 11 mm / Aluminum
+
+These standoffs are to be used if a neighbor is stacked on your GreatFET One and you want your case to be stacked above that neighbor.
+
+### Assembly Instructions 
+
+Assembly instructions can be found [here.](https://www.greatscottgadgets.com/greatfet/acrylic-case/)
