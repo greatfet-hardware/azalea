@@ -164,7 +164,7 @@ Pin|Symbol       |Special Function|Notes          |U1 Pin|GPIO |U0  |U2  |U3  |E
 
 ## Clear Acrylic Case
 
-The vector graphic file provided [here](https://github.com/greatfet-hardware/azalea/azalea_acrylic_case.svg) was created with Inkscape.
+The vector graphic file provided [here](https://github.com/yhetti/azalea/blob/master/azalea_acrylic_case.svg) was created with Inkscape.
 
 The black lines are the edge cuts. The blue lines are cut outs. The red lines arfe optional and should be lightly etched if they are used.
 The red lines are meant to be used to help count holes in the headers.
