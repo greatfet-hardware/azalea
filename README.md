@@ -166,7 +166,7 @@ Pin|Symbol       |Special Function|Notes          |U1 Pin|GPIO |U0  |U2  |U3  |E
 
 The vector graphic file provided in this repo was created with Inkscape.
 
-The black lines are the edge cuts. The blue lines are cut outs. The red lines arfe optional and should be lightly etched if they are used.
+The black lines are the edge cuts. The blue lines are cut outs. The red lines are optional and should be lightly etched if they are used.
 The red lines are meant to be used to help count holes in the headers.
 
 ### The BOM 
