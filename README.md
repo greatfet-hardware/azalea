@@ -1,5 +1,8 @@
 # Azalea
 
+Hardware licensed under the BSD 3 clause license
+Documentation licensed under the BSD 3 clause license
+
 This repository contains the KiCad design for Azalea, also known as GreatFET One.  The design requires:
 
 https://github.com/greatscottgadgets/gsg-kicad-lib
@@ -163,6 +166,9 @@ Pin|Symbol       |Special Function|Notes          |U1 Pin|GPIO |U0  |U2  |U3  |E
 
 
 ## Clear Acrylic Case
+
+Hardware licensed under the BSD 3 clause license
+Documentation licensed under the BSD 3 clause license
 
 The vector graphic file provided in this repo was created with Inkscape.
 
