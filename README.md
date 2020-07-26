@@ -41,16 +41,16 @@ Pin|Symbol|Special Function|Notes    |U1 Pin|GPIO |U0 |U1 |U2  |EMC        |SGPI
 1  |GND   |                |         |      |     |   |   |    |           |     |          |    |    |    |               |      |         |         |     |       |     |       |        
 2  |VCC   |                |3.3 V    |      |     |   |   |    |           |     |          |    |    |    |               |      |         |         |     |       |     |       |        
 3  |P4_9  |                |         |33    |5[13]|   |   |    |           |14   |          |RD  |    |    |               |      |         |         |     |       |     |       |CTIN_6  
-4  |P0_0  |                |         |32    |0[0] |   |   |    |           |0    |RXD1      |    |    |MISO|TX_WS          |TX_WS |         |         |     |       |     |       |        
+4  |P0_0  |                |         |32    |0[0] |   |   |    |           |0    |RXD1      |    |    |CIPO|TX_WS          |TX_WS |         |         |     |       |     |       |        
 5  |P4_10 |                |         |35    |5[14]|   |   |    |           |15   |          |    |    |    |               |      |         |         |     |       |     |       |CTIN_2  
-6  |P0_1  |                |         |34    |0[1] |   |   |    |           |1    |TX_EN     |    |    |MOSI|               |TX_SDA|         |         |     |       |     |       |        
-7  |P1_0  |                |         |38    |0[4] |   |   |    |A5         |7    |          |    |SSEL|    |               |      |         |         |     |       |     |       |CTIN_3  
+6  |P0_1  |                |         |34    |0[1] |   |   |    |           |1    |TX_EN     |    |    |COPI|               |TX_SDA|         |         |     |       |     |       |        
+7  |P1_0  |                |         |38    |0[4] |   |   |    |A5         |7    |          |    |CS  |    |               |      |         |         |     |       |     |       |CTIN_3  
 8  |P5_0  |                |         |37    |2[9] |   |DSR|    |D12        |     |          |    |    |    |               |      |         |         |     |       |MCOB2|T1_CAP0|        
 9  |P5_1  |                |         |39    |2[10]|   |DTR|    |D13        |     |          |    |    |    |               |      |         |         |     |       |MCI2 |T1_CAP1|        
-10 |P1_1  |boot mode       |pull-up  |42    |0[8] |   |   |    |A6         |8    |          |    |MISO|    |               |      |         |         |     |       |     |       |CTOUT_7 
+10 |P1_1  |boot mode       |pull-up  |42    |0[8] |   |   |    |A6         |8    |          |    |CIPO|    |               |      |         |         |     |       |     |       |CTOUT_7 
 11 |CLK0  |                |         |45    |     |   |   |    |CLK0, CLK01|     |REF_CLK   |    |    |SCK |               |      |         |         |CLK  |CLKOUT |     |       |        
-12 |P1_2  |boot mode       |pull-down|43    |0[9] |   |   |    |A7         |9    |          |    |MOSI|    |               |      |         |         |     |       |     |       |CTOUT_6 
-13 |P1_5  |                |         |48    |1[8] |   |   |    |CS0#       |15   |          |    |    |SSEL|               |      |PWR_FAULT|         |POW  |       |     |       |CTOUT_10
+12 |P1_2  |boot mode       |pull-down|43    |0[9] |   |   |    |A7         |9    |          |    |COPI|    |               |      |         |         |     |       |     |       |CTOUT_6 
+13 |P1_5  |                |         |48    |1[8] |   |   |    |CS0#       |15   |          |    |    |CS  |               |      |PWR_FAULT|         |POW  |       |     |       |CTOUT_10
 14 |P5_2  |                |         |46    |2[11]|   |RTS|    |D14        |     |          |    |    |    |               |      |         |         |     |       |MCI1 |T1_CAP2|        
 15 |P1_7  |                |         |50    |1[0] |   |DSR|    |D0         |     |          |    |    |    |               |      |PPWR     |         |     |       |     |       |CTIN_1  
 16 |P1_6  |                |         |49    |1[9] |   |   |    |WE#        |14   |          |    |    |    |               |      |         |         |CMD  |       |     |       |CTIN_5  
@@ -74,10 +74,10 @@ Pin|Symbol|Special Function|Notes    |U1 Pin|GPIO |U0 |U1 |U2  |EMC        |SGPI
 34 |P9_6  |                |         |72    |4[11]|RXD|   |    |           |8    |          |    |    |    |               |      |         |PWR_FAULT|     |       |MCOB1|       |        
 35 |P2_0  |                |         |75    |5[0] |TXD|   |    |A13        |4    |MDC       |    |    |    |               |      |PPWR     |         |     |ISP_TXD|     |T3_CAP0|        
 36 |P6_0  |                |         |73    |     |   |   |    |           |     |          |    |    |    |RX_MCLK, RX_SCK|      |         |         |     |       |     |       |        
-37 |P1_20 |                |         |70    |0[15]|   |   |    |           |13   |TXD1      |    |    |SSEL|               |      |         |         |     |       |     |T0_CAP2|        
+37 |P1_20 |                |         |70    |0[15]|   |   |    |           |13   |TXD1      |    |    |CS  |               |      |         |         |     |       |     |T0_CAP2|        
 38 |P1_19 |                |         |68    |     |   |   |    |           |     |REF_CLK   |    |    |SCK |RX_MCLK        |TX_SCK|         |         |     |CLKOUT |     |       |        
-39 |P1_4  |                |         |47    |0[11]|   |   |    |BLS0#      |11   |          |    |    |MOSI|               |      |IND0     |         |VOLT1|       |     |       |CTOUT_9 
-40 |P1_3  |                |         |44    |0[10]|   |   |    |OE#        |10   |          |    |    |MISO|               |      |IND1     |         |     |       |     |       |CTOUT_8 
+39 |P1_4  |                |         |47    |0[11]|   |   |    |BLS0#      |11   |          |    |    |COPI|               |      |IND0     |         |VOLT1|       |     |       |CTOUT_9 
+40 |P1_3  |                |         |44    |0[10]|   |   |    |OE#        |10   |          |    |    |CIPO|               |      |IND1     |         |     |       |     |       |CTOUT_8 
 
 ## J2 (NEIGHBOR2) Pinout
 
@@ -112,7 +112,7 @@ Pin|Symbol  |Special Function|Notes            |U1 Pin|GPIO |U0  |U1 |U2 |U3  |E
 27 |P7_0    |                |                 |110   |3[8] |    |   |   |    |           |4    |    |    |    |    |          |    |     |                                |      |    |    |         |    |   |        |                  |     |       |CTOUT_14
 28 |P3_4    |                |                 |119   |1[14]|    |TXD|   |    |           |     |    |    |    |    |          |    |SIO3 |TX_WS                           |RX_SDA|    |    |         |    |   |        |                  |     |       |        
 29 |P6_8    |                |                 |86    |5[16]|    |   |   |    |A14        |7    |    |    |    |    |          |    |     |                                |      |    |    |IND0     |    |   |        |                  |     |T2_MAT1|        
-30 |P3_7    |                |                 |123   |5[10]|    |   |   |    |           |     |    |    |    |MOSI|MISO, MOSI|    |MOSI |                                |      |    |    |         |    |   |        |                  |     |       |        
+30 |P3_7    |                |                 |123   |5[10]|    |   |   |    |           |     |    |    |    |COPI|CIPO, COPI|    |COPI |                                |      |    |    |         |    |   |        |                  |     |       |        
 31 |P6_7    |                |                 |85    |5[15]|    |   |   |    |A15        |6    |    |    |    |    |          |    |     |                                |      |    |    |IND1     |    |   |        |                  |     |T2_MAT0|        
 32 |P3_3    |                |                 |118   |     |    |   |   |    |           |     |    |    |    |SCK |SCK       |    |SCK  |TX_MCLK                         |TX_SCK|    |    |         |    |   |        |CGU_OUT1          |     |       |        
 33 |P2_2    |                |                 |84    |5[2] |UCLK|   |   |    |A11        |6    |    |    |    |    |          |    |     |                                |      |    |    |IND1     |    |   |        |                  |     |T3_CAP2|CTIN_6  
@@ -120,7 +120,7 @@ Pin|Symbol  |Special Function|Notes            |U1 Pin|GPIO |U0  |U1 |U2 |U3  |E
 35 |P2_1    | neighbor WC    |                 |81    |5[1] |RXD |   |   |    |A12        |5    |    |    |    |    |          |    |     |                                |      |    |    |PWR_FAULT|    |   |        |ISP_RXD           |     |T3_CAP1|        
 36 |P6_3    |                |                 |79    |3[2] |    |   |   |    |CS1#       |4    |    |    |    |    |          |    |     |                                |      |    |    |PPWR     |    |   |        |                  |     |T2_CAP2|        
 37 |P3_5    |                |                 |121   |1[15]|    |RXD|   |    |           |     |    |    |    |    |          |    |SIO2 |TX_SDA                          |RX_WS |    |    |         |    |   |        |                  |     |       |        
-38 |P3_6    |                |                 |122   |0[6] |    |   |   |    |           |     |    |    |    |MISO|SSEL, MISO|    |MISO |                                |      |    |    |         |    |   |        |                  |     |       |        
+38 |P3_6    |                |                 |122   |0[6] |    |   |   |    |           |     |    |    |    |CIPO|CS,   CIPO|    |CIPO |                                |      |    |    |         |    |   |        |                  |     |       |        
 39 |I2C0_SDA|                |pull-up          |93    |     |    |   |   |    |           |     |    |    |    |    |          |    |     |                                |      |SDA |    |         |    |   |        |                  |     |       |        
 40 |I2C0_SCL|                |pull-up          |92    |     |    |   |   |    |           |     |    |    |    |    |          |    |     |                                |      |SCL |    |         |    |   |        |                  |     |       |        
 
