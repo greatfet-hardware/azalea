@@ -5,9 +5,9 @@ $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Azalea"
-Date "2018-07-24"
+Date "2021-11-23"
 Rev ""
-Comp "Copyright 2015-2018 Great Scott Gadgets"
+Comp "Copyright 2015-2021 Great Scott Gadgets"
 Comment1 "License: BSD-3-Clause"
 Comment2 "https://greatscottgadgets.com/greatfet/"
 Comment3 ""
@@ -2188,7 +2188,7 @@ F 5 "BLM21PG221SN1D" H 2950 4550 60  0001 C CNN "Part Number"
 F 6 "FERRITE CHIP 220 OHM 2000MA 0805" H 2950 4550 60  0001 C CNN "Description"
 F 7 "DNP" V 3200 4550 60  0000 C CNN "Note"
 	1    2950 4550
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR073
@@ -2214,7 +2214,7 @@ F 5 "BLM21PG221SN1D" H 13600 6400 60  0001 C CNN "Part Number"
 F 6 "FERRITE CHIP 220 OHM 2000MA 0805" H 13600 6400 60  0001 C CNN "Description"
 F 7 "DNP" V 13850 6400 60  0000 C CNN "Note"
 	1    13600 6400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR074
@@ -4026,10 +4026,10 @@ ADC0_4
 Text Label 5400 1350 0    40   ~ 0
 ADC0_7
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0101
 U 1 1 5B5765DD
 P 5700 950
-F 0 "#PWR?" H 5700 800 50  0001 C CNN
+F 0 "#PWR0101" H 5700 800 50  0001 C CNN
 F 1 "VCC" H 5700 1100 50  0000 C CNN
 F 2 "" H 5700 950 60  0000 C CNN
 F 3 "" H 5700 950 60  0000 C CNN
@@ -4056,10 +4056,10 @@ Wire Wire Line
 Text Label 5400 1450 0    40   ~ 0
 ADC0_1
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5B5789D6
 P 5800 1550
-F 0 "#PWR?" H 5800 1300 50  0001 C CNN
+F 0 "#PWR0102" H 5800 1300 50  0001 C CNN
 F 1 "GND" H 5800 1400 50  0000 C CNN
 F 2 "" H 5800 1550 60  0000 C CNN
 F 3 "" H 5800 1550 60  0000 C CNN
@@ -4246,7 +4246,7 @@ F 4 "Murata" H 2800 5750 60  0001 C CNN "Manufacturer"
 F 5 "BLM21PG221SN1D" H 2800 5750 60  0001 C CNN "Part Number"
 F 6 "FERRITE CHIP 220 OHM 2000MA 0805" H 2800 5750 60  0001 C CNN "Description"
 	1    2800 5750
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2800 5300 2800 5600
