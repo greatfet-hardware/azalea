@@ -5,7 +5,7 @@ $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Azalea"
-Date "2021-11-23"
+Date "2021-12-02"
 Rev ""
 Comp "Copyright 2015-2021 Great Scott Gadgets"
 Comment1 "License: BSD-3-Clause"
@@ -1920,9 +1920,9 @@ P6_0
 Text Label 15300 6000 0    40   ~ 0
 P2_0
 Text Notes 16250 6200 0    40   ~ 0
-CIPO
+POCI
 Text Notes 15250 6200 2    40   ~ 0
-COPI
+PICO
 Text Notes 16250 6100 0    40   ~ 0
 SCK
 Text Notes 15250 6100 2    40   ~ 0
